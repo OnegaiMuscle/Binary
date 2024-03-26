@@ -16,5 +16,13 @@
   <input type="checkbox" onchange="displayStatus(this)"><span></span>
   <input type="checkbox" onchange="displayStatus(this)"><span></span>
   <script src="script.js"></script>
+  <div class="tooltip">Cliquez sur l'input
+    <input type="text" onfocus="showTooltip(this)">
+    <div class="tooltiptext" id="tooltipText">
+      Choix 1<br>
+      Choix 2<br>
+      Choix 3
+    </div>
+  </div>
 </body>
 </html>

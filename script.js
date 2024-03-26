@@ -3,3 +3,7 @@ function displayStatus(e) {
   const z = e.checked
   const spans = document.querySelectorAll("span")
 }
+
+function showTooltip(elem) {
+  document.getElementById('tooltipText').style.visibility = 'visible';
+}
