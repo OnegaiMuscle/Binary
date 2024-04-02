@@ -30,6 +30,34 @@
       <input type="checkbox" onchange="displayStatus(this)"><span></span>
     </div>
   </div>
+  <table id="spreadsheet">
+    <tr>
+      <th></th>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td><input type="text" oninput="updateValue(this, 1, 1)"></td>
+      <td><input type="text" oninput="updateValue(this, 1, 2)"></td>
+      <td><input type="text" oninput="updateValue(this, 1, 3)"></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><input type="text" oninput="updateValue(this, 2, 1)"></td>
+      <td><input type="text" oninput="updateValue(this, 2, 2)"></td>
+      <td><input type="text" oninput="updateValue(this, 2, 3)"></td>
+    </tr>
+    <!-- Ajoutez plus de lignes selon vos besoins -->
+  </table>
+
+
+
+
+
+
+
   <script src="script.js"></script>
 </body>
 </html>

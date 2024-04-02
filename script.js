@@ -7,3 +7,11 @@ function displayStatus(e) {
 function showTooltip(elem) {
   document.getElementById('tooltipText').style.visibility = 'visible';
 }
+
+
+function updateValue(cell, row, col) {
+  var table = document.getElementById('spreadsheet');
+  var input = table.rows[row].cells[col].getElementsByTagName('input')[0];
+  input.value = cell.value;
+}
+
