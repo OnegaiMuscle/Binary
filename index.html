@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <input type="checkbox" onchange="displayStatus(this)"><span></span>
-  <input type="checkbox" onchange="displayStatus(this)"><span></span>
+  <input type="checkbox" onchange="displayStatus(this)" onmousedown="changee(event)"><span></span>
+  <input type="checkbox" onchange="displayStatus(this)" onmousedown="changee(event)"><span></span>
 
   <p></p>
   <p></p>
@@ -18,8 +18,8 @@
   <div class="tooltip">Cliquez sur l'input
     <input type="text" onfocus="showTooltip(this)">
     <div class="tooltiptext" id="tooltipText">
-      <input type="checkbox" onchange="displayStatus(this)"><span></span>
-      <input type="checkbox" onchange="displayStatus(this)"><span></span>
+      <input type="checkbox" onchange="displayStatus(this)" onmousedown="change(this)"><span></span>
+      <input type="checkbox" onchange="displayStatus(this)" onmousedown="change(this)"><span></span>
       <input type="checkbox" onchange="displayStatus(this)"><span></span>
       <input type="checkbox" onchange="displayStatus(this)"><span></span>
       <input type="checkbox" onchange="displayStatus(this)"><span></span>

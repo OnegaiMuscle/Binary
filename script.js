@@ -1,3 +1,10 @@
+function changee(e) {
+  e.preventDefault()
+  e.target.checked = !e.target.checked
+
+}
+
+
 function displayStatus(e) {
   console.log(e.checked)
   const z = e.checked

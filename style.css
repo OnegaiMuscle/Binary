@@ -42,3 +42,6 @@ th, td {
   padding: 5px;
   text-align: left;
 }
+
+.selected {
+  background-color: #D8D8D8;
