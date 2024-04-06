@@ -45,3 +45,7 @@ th, td {
 
 .selected {
   background-color: #D8D8D8;
+
+
+  body { margin: 0; overflow: hidden; }
+  canvas { background: #000; display: block; }
