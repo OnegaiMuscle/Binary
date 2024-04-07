@@ -95,3 +95,32 @@ function animate() {
 }
 
 animate();
+
+
+function selectCellule(ligne, colonne) {
+  // On récupère la table
+  var table = document.querySelector('table');
+
+  // On récupère la ligne spécifique (tr), -1 car les indices commencent à 0
+  var row = table.rows[ligne - 1];
+
+  // On vérifie si la ligne existe
+  if(row) {
+    // On récupère la cellule spécifique (td), -1 car les indices commencent à 0
+    var cell = row.cells[colonne - 1];
+
+    // On vérifie si la cellule existe
+    if(cell) {
+      // Ici, vous pouvez effectuer des opérations sur la cellule, par exemple :
+      cell.style.backgroundColor = 'yellow'; // Met en surbrillance la cellule
+      return cell; // Retourne la cellule sélectionnée
+    } else {
+      console.log('La cellule n\'existe pas');
+    }
+  } else {
+    console.log('La ligne n\'existe pas');
+  }
+}
+
+// Utilisation de la fonction
+selectCellule(3, 2); // Sélectionne la cellule à la 3ème ligne et 2ème colonne
