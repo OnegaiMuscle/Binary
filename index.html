@@ -7,58 +7,20 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <input type="checkbox" onchange="displayStatus(this)" onmousedown="changee(event)"><span></span>
-  <input type="checkbox" onchange="displayStatus(this)" onmousedown="changee(event)"><span></span>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <div class="tooltip">Cliquez sur l'input
-    <input type="text" onfocus="showTooltip(this)">
-    <div class="tooltiptext" id="tooltipText">
-      <input type="checkbox" onchange="displayStatus(this)" onmousedown="change(this)"><span></span>
-      <input type="checkbox" onchange="displayStatus(this)" onmousedown="change(this)"><span></span>
-      <input type="checkbox" onchange="displayStatus(this)"><span></span>
-      <input type="checkbox" onchange="displayStatus(this)"><span></span>
-      <input type="checkbox" onchange="displayStatus(this)"><span></span>
-      <input type="checkbox" onchange="displayStatus(this)"><span></span>
-      <input type="checkbox" onchange="displayStatus(this)"><span></span>
-      <input type="checkbox" onchange="displayStatus(this)"><span></span>
-      <input type="checkbox" onchange="displayStatus(this)"><span></span>
-      <input type="checkbox" onchange="displayStatus(this)"><span></span>
-    </div>
+  <div>
+    <div onchange="displayStatus(this)"><input type="checkbox"><span>0</span></div>
+    <div onchange="displayStatus(this)"><input type="checkbox"><span>0</span></div>
+    <div onchange="displayStatus(this)"><input type="checkbox"><span>0</span></div>
+    <div onchange="displayStatus(this)"><input type="checkbox"><span>0</span></div>
+    <div onchange="displayStatus(this)"><input type="checkbox"><span>0</span></div>
+    <div onchange="displayStatus(this)"><input type="checkbox"><span>0</span></div>
+    <div onchange="displayStatus(this)"><input type="checkbox"><span>0</span></div>
+    <div onchange="displayStatus(this)"><input type="checkbox"><span>0</span></div>
   </div>
-  <table id="spreadsheet">
-    <tr>
-      <th></th>
-      <th>A</th>
-      <th>B</th>
-      <th>C</th>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td><input type="text" oninput="updateValue(this, 1, 1)"></td>
-      <td><input type="text" oninput="updateValue(this, 1, 2)"></td>
-      <td><input type="text" oninput="updateValue(this, 1, 3)"></td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td><input type="text" oninput="updateValue(this, 2, 1)"></td>
-      <td><input type="text" oninput="updateValue(this, 2, 2)"></td>
-      <td><input type="text" oninput="updateValue(this, 2, 3)"></td>
-    </tr>
-    <!-- Ajoutez plus de lignes selon vos besoins -->
-  </table>
-
-
-
 
 
 
 
   <script src="script.js"></script>
-  <canvas id="gameCanvas"></canvas>
 </body>
 </html>
