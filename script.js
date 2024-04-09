@@ -13,7 +13,6 @@ function display(t, e) {
 
   console.log(e.target.nextElementSibling)
   e.target.nextElementSibling.textContent= e.target.checked ? 1 : 0
-  const z = t.children
   console.log(parseInt([...t.children].map(x=>x.children[1].textContent).join(""),2
   ))
 
